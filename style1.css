@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#parent{
+    width: 200px;
+    height: 200px;
+    /* background-color: lightcoral; */
+    border: 3.5px solid rgb(117, 117, 117);
+    border-radius: 50%;
+    position: relative;
+    background-image: url('https://w0.peakpx.com/wallpaper/361/505/HD-wallpaper-mustang-horse-mustang-galloping-black-white-horse.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+.child{
+    width: 103.6%;
+    height: 103.6%;
+    /* background-color: red; */
+    border: 5px solid rgba(249, 4, 4, 0.815);
+    border-left: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    left: -1.5%;
+    top: -1.5%;
+    animation: loading 2.5s ease-in-out normal infinite;  
+}
+@keyframes loading {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
